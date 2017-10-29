@@ -1,55 +1,39 @@
 {
-  "index.html": {
+  "3/videos.html": {
     "resources": [
-      "js/castapp.js",
-      "homepage.html",
-      "js/mui.min.js",
-      "fonts/mui.ttf",
-      "css/mui.min.css"
+      "3/fonts/mui.ttf",
+      "3/js/mui.min.js",
+      "3/css/style.css",
+      "3/images/lunbo1.jpg",
+      "3/js/castapp.js",
+      "3/videoso.html",
+      "3/css/mui.min.css"
     ],
     "refer": [
-      "homepage.html",
-      "22.html"
+      "3/videoso.html"
     ]
   },
-  "homepage.html": {
+  "3/videoso.html": {
     "resources": [
-      "images/lunbo3.jpg",
-      "css/style.css",
-      "images/lunbo1.jpg",
-      "images/lunbo2.jpg"
+      "3/images/video.png",
+      "3/js/mui.picker.js",
+      "3/css/mui.picker.min.css",
+      "3/js/mui.poppicker.js",
+      "3/fonts/mui.ttf",
+      "3/css/style.css",
+      "3/images/lunbo1.jpg",
+      "3/js/castapp.js"
     ],
     "refer": []
   },
-  "cs.html": {
+  "3/22.html": {
     "resources": [
-      "js/mui.min.js",
-      "css/mui.min.css",
-      "video/mo.mp4"
+      "3/js/mui.min.js",
+      "3/videoso.html",
+      "3/css/mui.min.css"
     ],
-    "refer": []
-  },
-  "videos.html": {
-    "resources": [
-      "video/mo.mp4",
-      "js/mui.min.js",
-      "css/mui.min.css",
-      "video/mo (1).mp4",
-      "fonts/mui.ttf",
-      "css/style.css",
-      "images/lunbo1.jpg",
-      "js/castapp.js",
-      "videoso.html"
-    ],
-    "refer": []
-  },
-  "videoso.html": {
-    "resources": [
-      "js/castapp.js",
-      "js/mui.min.js",
-      "css/mui.min.css",
-      "css/style.css"
-    ],
-    "refer": []
+    "refer": [
+      "3/videoso.html"
+    ]
   }
 }
