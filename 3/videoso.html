@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/mui.picker.min.css" />
 	</head>
 
 	<body>
@@ -61,10 +62,12 @@
 								<li class="mui-table-view-cell">
 									<div class="videoso-Catalog-top">
 										<span style="font-size: 15px; font-family:  '黑体'; "><strong> 学习完整课程</strong></span>
-										<span style="float: right; font-size: 15px;" >目录</span>
-										<span class="mui-icon mui-icon-home" style="float: right; font-size: 20px;"></span>
+										<button id='bt' style="float: right; font-size: 15px;" >目录</button>
 										
+									
+									<span class="mui-icon mui-icon-home" style="float: right; font-size: 20px;"></span>
 									</div>
+										
 									<div class="videoso-Catalog-bottom">
 										 <div class="videoso-Catalog-bottom-left" >
 										 	<img  src="images/lunbo1.jpg" /> 
@@ -143,8 +146,12 @@
 							
 						</div>  
 					</div>
-		<script src="js/mui.min.js"></script>
+				
+				
+		<script src="js/mui.min.js"></script> 
 		<script type="text/javascript" src="js/castapp.js" ></script>
+		<script type="text/javascript" src="js/mui.picker.js" ></script>		
+		<script type="text/javascript" src="js/mui.poppicker.js" ></script>
 		<script type="text/javascript">
 			mui.init({ 
 				pullRefresh: {
@@ -175,6 +182,23 @@
 	    	
 			mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); 
 		} 
+		
+		
+		document.getElementById('bt').addEventListener("click", function() {
+			
+			    var roadPick = new mui.PopPicker();//获取弹出列表组建，假如是二联则在括号里面加入{layer:2}
+		                roadPick.setData([{//设置弹出列表的信息，假如是二联，还需要一个children属性
+		                    value: "1",
+		                    text: "直销"
+		                }, {
+		                    value: "2",
+		                    text: "传统寿销养"
+		                }]);
+		       roadPick.show(function(item) {//弹出列表并在里面写业务代码
+		                    
+		                });
+            });
+		
 		</script>
 	</body>
 
